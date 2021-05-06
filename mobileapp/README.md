@@ -26,7 +26,6 @@ cordova prepare
 To build the cordova app:
 
 ```
-export SENTRY_SKIP_AUTO_RELEASE=true
 cordova build {ios,android}
 ```
 
@@ -165,12 +164,4 @@ var pathToManifest = path.join(
   "main",
   "AndroidManifest.xml"
 );
-```
-
-### iOS: Building for iOS, but the embedded framework 'Sentry.framework' was built for iOS + iOS Simulator.
-
-```
-cordova platform remove ios && cordova platform add ios
-cordova plugin remove sentry-cordova
-cordova prepare
 ```
